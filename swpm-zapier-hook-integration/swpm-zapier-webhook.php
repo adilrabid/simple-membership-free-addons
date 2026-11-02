@@ -2,7 +2,7 @@
 /*
 * Plugin Name: SWPM Zapier Webhook Integration
 * Description: Sends member's username and email to Zapier when a user completes registration via Simple Membership plugin.
-* Version: 1.0
+* Version: 1.1
 * Author: wp.insider
 * Author URI: https://simple-membership-plugin.com
 * License: GPL2
@@ -30,5 +30,5 @@ function swpm_send_data_to_zapier_webhook($member_data) {
         'body'      => json_encode($payload),
     ));
     SwpmLog::log_simple_debug('Data sent to Zapier webhook URL: ' . $zapier_webhook_url, true);
-    SwpmLog::log_array_data_to_debug($payload);
+    SwpmLog::log_array_data_to_debug($payload, true);
 }
