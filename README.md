@@ -25,7 +25,7 @@ Each addon is a small, standalone WordPress plugin that extends Simple Membershi
 | Misc Shortcodes | [`swpm-misc-shortcodes`](swpm-misc-shortcodes/) | A collection of miscellaneous shortcodes and small features for Simple Membership. | [Usage guide](https://simple-membership-plugin.com/simple-membership-miscellaneous-shortcodes-addon/) |
 | Partial Protection | [`swpm-partial-protection`](swpm-partial-protection/) | Protect or hide specific sections of a post or page, so you can show teaser content to everyone and keep the rest for members. | [Usage guide](https://simple-membership-plugin.com/apply-partial-section-protection/) |
 | Show Member Info | [`swpm-show-member-info`](swpm-show-member-info/) | Display member details (such as name, level or expiry) on your site using shortcodes. | [Usage guide](https://simple-membership-plugin.com/simple-membership-addon-show-member-info/) |
-| Zapier Webhook Integration | [`swpm-zapier-hook-integration`](swpm-zapier-hook-integration/) | Send a new member's username, email and name to a Zapier webhook when they complete registration. An example addon: you set your webhook URL in its PHP file. | [Usage guide](https://simple-membership-plugin.com/zapier-webhook-integration-for-simple-membership-plugin/) |
+| Zapier Webhook Integration | [`swpm-zapier-hook-integration`](swpm-zapier-hook-integration/) | Send a new member's username, email and name to a Zapier webhook when they complete registration. Set your webhook URL in Settings → Addon Settings. | [Usage guide](https://simple-membership-plugin.com/zapier-webhook-integration-for-simple-membership-plugin/) |
 
 ### CAPTCHA Addons
 
