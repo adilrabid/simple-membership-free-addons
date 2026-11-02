@@ -19,9 +19,11 @@ on:
           - swpm-after-login-redirection
           - swpm-custom-message
           - swpm-form-shortcode
+          - swpm-full-page-protection
           - swpm-misc-shortcodes
           - swpm-partial-protection
           - swpm-show-member-info
+          - swpm-zapier-hook-integration
           - 01.CAPTCHA-related-addons-grp/swpm-cloudflare-turnstile
           - 01.CAPTCHA-related-addons-grp/swpm-recaptcha
           - 01.CAPTCHA-related-addons-grp/swpm-recaptcha-enterprise
