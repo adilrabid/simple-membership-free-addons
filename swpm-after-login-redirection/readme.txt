@@ -1,7 +1,7 @@
 === Simple Membership After Login Redirection ===
 Contributors: smp7, wp.insider
 Donate link: https://simple-membership-plugin.com/
-Tags: login, redirection, member, members, membership, login redirection, access, level
+Tags: login, redirection, member, members, membership, login redirection,
 Requires at least: 6.5
 Tested up to: 7.1
 Stable tag: 2.2
@@ -16,6 +16,10 @@ This addon allows you to configure an after login page for each of the membershi
 This addon plugin will automatically redirect the members to the appropriate page after they log into your site.
 
 After you install this addon, edit your membership levels and specify the redirect pages and the addon will take care of the rest.
+
+Additional options (such as redirecting members to the last page they were on) are available in the Simple Membership -> Login Redirection menu.
+
+Read the [usage documentation](https://simple-membership-plugin.com/configure-login-redirection-members/) to learn how to use the after login redirection addon.
 
 == Installation ==
 
