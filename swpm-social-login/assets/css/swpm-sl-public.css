@@ -1,0 +1,61 @@
+.swpm_sl_login_buttons_section{
+
+}
+
+.swpm_sl_login_section_header{
+    margin: 14px 0 12px;
+}
+
+.swpm_sl_login_buttons_wrap {
+
+}
+
+.swpm_sl_login_btn {
+    display: flex;
+    max-width: max-content;
+    align-items: center;
+    padding: 6px 8px;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 200ms;
+    font-size: small;
+    margin-bottom: 5px;
+
+    border-radius: 4px;
+    border: 2px solid lightgray;
+}
+
+.swpm_sl_google_login_btn_icon{
+
+}
+
+.swpm_sl_login_btn:hover {
+
+}
+
+.swpm_sl_login_btn img.swpm_sl_login_btn_icon {
+    width: 1.2rem;
+    height: auto;
+    margin-right: 6px;
+}
+
+.swpm_sl_login_response_wrap{
+
+}
+
+.swpm-sl-response {
+
+}
+
+.swpm-sl-response-success {
+    color: green;
+}
+
+.swpm-sl-response-error {
+    color: #cc0000;
+}
+
+.swpm-sl-response-info{
+    font-weight: bold;
+}
