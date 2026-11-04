@@ -2,9 +2,9 @@
 Contributors: smp7, wp.insider
 Donate link: https://simple-membership-plugin.com/
 Tags: login, redirection, member, members, membership, login redirection, access, level
-Requires at least: 4.5
-Tested up to: 7.0
-Stable tag: 2.1
+Requires at least: 6.5
+Tested up to: 7.1
+Stable tag: 2.2
 License: GPLv2 or later
 
 An addon for the simple membership plugin to configure after login redirection to a specific page based on the member's level.
@@ -31,6 +31,9 @@ None
 None
 
 == Changelog ==
+
+= 2.2 =
+- Security fix: the 'swpm_redirect_to' URL is now validated (using 'wp_validate_redirect') when the member logs in using the Social Login addon, the same as the normal login. Only URLs of this site (or the hosts allowed by the 'allowed_redirect_hosts' filter hook) are accepted. Thanks to Sanjay Babu for reporting this.
 
 = 2.1 =
 - PHP warning fix for the case when nothing has been set in the addon's settings yet.

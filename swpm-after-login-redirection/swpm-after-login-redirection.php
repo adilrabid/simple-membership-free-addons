@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Simple Membership After Login Redirection
-Version: 2.1
+Version: 2.2
 Plugin URI: https://simple-membership-plugin.com/
 Author: smp7, wp.insider
 Author URI: https://simple-membership-plugin.com/
@@ -12,7 +12,7 @@ if (!defined('ABSPATH')){
     exit; //Exit if accessed directly
 }
 
-define( 'SWPM_ALR_VERSION', '2.1' );
+define( 'SWPM_ALR_VERSION', '2.2' );
 define( 'SWPM_ALR_CONTEXT', 'swpm_alr');
 
 include_once('swpm-after-login-settings-menu.php');//Settings menu handling file.
@@ -144,8 +144,15 @@ function swpm_alr_do_after_social_login_redirection($redirect_to, $auth_data){
     $query_string = parse_url($auth_data->referer_url, PHP_URL_QUERY);
     if (!empty($query_string)) {
         parse_str($query_string, $query_params);
-        if(isset($query_params['swpm_redirect_to']) && wp_http_validate_url($query_params['swpm_redirect_to'])){
-            return esc_url_raw($query_params['swpm_redirect_to']);
+        if(isset($query_params['swpm_redirect_to']) && !empty($query_params['swpm_redirect_to'])){
+            //Validate the redirect URL (same as the normal login redirection). Only the site's own host (or the hosts allowed by the 'allowed_redirect_hosts' filter hook) is accepted.
+            $swpm_redirect_to = wp_validate_redirect(esc_url_raw($query_params['swpm_redirect_to']), '');
+            if (!empty($swpm_redirect_to)) {
+                return $swpm_redirect_to;
+            }
+            if (method_exists('SWPM_SL_Utils', 'log_simple_debug')) {
+                SWPM_SL_Utils::log_simple_debug("The 'swpm_redirect_to' value is not an allowed redirect URL. It is ignored.", false);
+            }
         }
     }
 
