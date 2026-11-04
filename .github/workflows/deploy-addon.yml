@@ -23,6 +23,7 @@ on:
           - swpm-misc-shortcodes
           - swpm-partial-protection
           - swpm-show-member-info
+          - swpm-social-login
           - swpm-zapier-hook-integration
           - 01.CAPTCHA-related-addons-grp/swpm-cloudflare-turnstile
           - 01.CAPTCHA-related-addons-grp/swpm-recaptcha
